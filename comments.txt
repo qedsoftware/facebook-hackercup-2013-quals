@@ -1,2 +1,3 @@
 Problem 1: easy
 Problem 2: dynamic programming 
+Problem 3: mathematical invariant
