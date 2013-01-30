@@ -1,0 +1,2 @@
+Problem 1: easy
+Problem 2: dynamic programming 
