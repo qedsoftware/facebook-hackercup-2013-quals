@@ -19,14 +19,17 @@ The beauty of each letter is an integer between 1 and 26, inclusive, and no two 
 You're a student writing a report on the youth of this famous hacker. You found the string that Johnny considered most beautiful. What is the maximum possible beauty of this string?
 
 Input
-The input file consists of a single integer m followed by m lines.
+
+	The input file consists of a single integer m followed by m lines.
 
 Output
-Your output should consist of, for each test case, a line containing the string "Case #x: y" where x is the case number (with 1 being the first case in the input file, 2 being the second, etc...) and y is the maximum beauty for that test case.
+
+	Your output should consist of, for each test case, a line containing the string "Case #x: y" where x is the case number (with 1 being the first case in the input file, 2 being the second, etc...) and y is the maximum beauty for that test case.
 
 Constraints
-5 <= m <= 50
-2 <= length of s <= 500
+
+	5 <= m <= 50
+	2 <= length of s <= 500
 
 
 Example Input:
@@ -66,31 +69,34 @@ A message has balanced parentheses if it consists of one of the following:
 Write a program that determines if there is a way to interpret his message while leaving the parentheses balanced.
  
 Input
-The first line of the input contains a number T (1 <= T <= 50), the number of test cases.
-The following T lines each contain a message of length s that you got from John.
+
+	The first line of the input contains a number T (1 <= T <= 50), the number of test cases.
+	The following T lines each contain a message of length s that you got from John.
  
 Output
-For each of the test cases numbered in order from 1 to T, output "Case #i: " followed by a string stating whether or not it is possible that the message had balanced parentheses. If it is, the string should be "YES," else it should be "NO" (all quotes for clarity only).
+
+	For each of the test cases numbered in order from 1 to T, output "Case #i: " followed by a string stating whether or not it is possible that the message had balanced parentheses. If it is, the string should be "YES," else it should be "NO" (all quotes for clarity only).
  
 Constraints
-1 <= length of s <= 100
+
+	1 <= length of s <= 100
 
 Example Input:
 
-5
-:((
-i am sick today (:()
-(:)
-hacker cup: started :):)
-)(
+	5
+	:((
+	i am sick today (:()
+	(:)
+	hacker cup: started :):)
+	)(
 
 Example Output:
 
-Case #1: NO
-Case #2: YES
-Case #3: YES
-Case #4: YES
-Case #5: NO
+	Case #1: NO
+	Case #2: YES
+	Case #3: YES
+	Case #4: YES
+	Case #5: NO
 
 
 
@@ -112,13 +118,15 @@ m[0] = a
 m[i] = (b * m[i - 1] + c) % r, 0 < i < k
  
 Input
- The first line contains an integer T (T <= 20), the number of test cases.
- This is followed by T test cases, consisting of 2 lines each.
- The first line of each test case contains 2 space separated integers, n, k (1 <= k <= 105, k < n <= 109).
- The second line of each test case contains 4 space separated integers a, b, c, r (0 <= a, b, c <= 109, 1 <= r <= 109).
+
+	The first line contains an integer T (T <= 20), the number of test cases.
+	This is followed by T test cases, consisting of 2 lines each.
+	The first line of each test case contains 2 space separated integers, n, k (1 <= k <= 105, k < n <= 109).
+	The second line of each test case contains 4 space separated integers a, b, c, r (0 <= a, b, c <= 109, 1 <= r <= 109).
  
 Output
- For each test case, output a single line containing the case number and the nth element of m.
+
+	For each test case, output a single line containing the case number and the nth element of m.
 
 Example Input
 
